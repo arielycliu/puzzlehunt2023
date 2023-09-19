@@ -1,0 +1,20 @@
+{
+  "text": [
+    {
+      "type": "dialogue",
+      "speaker": "Alice",
+      "message": "Hello, how are you?"
+    },
+    {
+      "type": "question",
+      "speaker": "Bob",
+      "message": "I'm good, thanks. How about you?",
+      "options": ["yes", "no"]
+    },
+    {
+      "type": "puzzle",
+      "speaker": "Alice",
+      "message": "I'm doing well, thanks for asking."
+    }
+  ]
+}
