@@ -1,0 +1,19 @@
+{
+  "dialogue": [
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You",
+      "wait": "True"
+    },
+    {
+      "type": "question",
+      "speaker": "narrator",
+      "message": "You",
+      "options": [
+        "yes",
+        "no"
+      ]
+    }
+  ]
+}

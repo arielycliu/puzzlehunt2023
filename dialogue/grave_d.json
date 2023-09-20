@@ -2,22 +2,56 @@
   "text": [
     {
       "type": "dialogue",
-      "speaker": "Alice",
-      "message": "Hello, how are you?"
+      "speaker": "narrator",
+      "message": "You wake up in the middle of a cemetery. The last thing you can remember is… well actually you can’t remember anything. ",
+      "wait": "True"
     },
     {
-      "type": "question",
-      "speaker": "Bob",
-      "message": "I'm good, thanks. How about you?",
-      "options": ["yes", "no"]
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "To the right you can see some of your fencing friends gathered in a group. You walk up closer to find that everyone is translucent.",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Your friends are gathered about a map, chatting about some treasure guarded by a fire-breathing dragon."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You remember that you can’t afford rent this month and the decision is just about made. \nOne last thing, which three friends would you like to have join you on this adventure? (must be a fencer)",
+      "wait": "False"
+    },
+    {
+      "type": "friend_question",
+      "speaker": "narrator",
+      "message": "Friend 1: ",
+      "options": ""
+    },
+    {
+      "type": "friend_question",
+      "speaker": "narrator",
+      "message": "Friend 2: ",
+      "options": ""
+    },
+    {
+      "type": "friend_question",
+      "speaker": "narrator",
+      "message": "Friend 3: ",
+      "options": ""
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Now that you’re all set with your squad, let’s set off to your first location: Melody Valley",
+      "wait": "False"
     },
     {
       "type": "puzzle",
-      "message": "I'm doing well, thanks for asking.",
-      "partials": {
-        "e91c254ad58860a02c788dfb5c1a65d6a8846ab1dc649631c7db16fef4af2dec": ""
-      },
-      "answer": "3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b"
+      "message": "When you arrive at your location, input the location key code so that I can be calibrated to that location.",
+      "partials": {},
+      "answer": "1d78e018e405ef26b7f7581336a2a4c556c3783eaa763978cbd7d2ddd0adb3ad"
     }
   ]
 }

@@ -1,10 +1,8 @@
 from util import helper_functions as hp
 import art
-player_name = ""
 
 
 def intro():
-    global player_name
     data = hp.get_dialogue_json("../dialogue/intro_d.json")
     blurbs = data["text"]
     print("Welcome to Dreamscape")
@@ -26,5 +24,5 @@ def intro():
     print("")
     art.tprint("Dreamscape", "colossal")
     print("")
-
+    return player_name
 intro()

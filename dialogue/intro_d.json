@@ -4,7 +4,7 @@
       "type": "question_name",
       "speaker": "narrator",
       "message": "What should we call you?",
-      "options": "N/A"
+      "options": ""
     },
     {
       "type": "question",
@@ -15,7 +15,8 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "Good job, I think you're ready to enter now..."
+      "message": "Good job, I think you're ready to enter now...",
+      "wait": "True"
     }
   ]
 }

@@ -51,10 +51,10 @@ def answer_puzzle(blurb):
     return
 
 
-def print_text(blurb, wait=True):
+def print_text(blurb):
     message = blurb["message"] if blurb["speaker"] == "narrator" else blurb["speaker"] + ": " + blurb["message"]
     print(message)
-    if wait:
+    if "wait" not in blurb.keys() or blurb["wait"] != "False":
         input(" ~ ")
 
 
@@ -63,14 +63,16 @@ def ask_question(blurb):
     options = blurb["options"]
     global incorrect_dialogue
     print(question)
-    if options != "N/A":
+    if options != "":
         for i in range(len(options)):
             print(f"   {i + 1}. {options[i]}")
     invalid = True
     while invalid:
         response = input("> ")
-        if options == "N/A" and response != "":  # name question, no lowercase
+        if options == "" and response != "":  # name question, no lowercase
             invalid = False
+        elif options == "" and response == "":
+            print("Blank answers are not allowed here!")
         else:
             response = response.lower()
             if response in options:

@@ -3,7 +3,8 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "Press enter to advance in the story, let try it now..."
+      "message": "Press enter to advance in the story, let try it now...",
+      "wait": "True"
     },
     {
       "type": "question",
