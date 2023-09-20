@@ -29,32 +29,38 @@ def get_dialogue_json(path):
     return data
 
 
-def answer_puzzle(question, partial, answer):
+def answer_puzzle(blurb):
+    question = blurb["message"]
+    partials = blurb["partials"]
+    answer = blurb["answer"]
     print(question)
     solved = False
     while not solved:
-        response = input("> ")
+        response = input(">>> ")
         response = hash_text(response)
         if response == answer:
             print("Correct, you got the final answer!")
             solved = True
-        elif response == partial:
-            print("Correct, that's a partial answer - keep going")
+        elif response in partials.keys():
+            if partials[response]:
+                print(partials[response])
+            else:
+                print("Correct, that's a partial answer - keep going!")
         else:
             print("Incorrect, try again?")
+    return
 
 
-def print_text(statement, wait=True):
-    try:
-        print(eval(statement))
-        print("sdf")
-    except:
-        print(statement)
+def print_text(blurb, wait=True):
+    message = blurb["message"] if blurb["speaker"] == "narrator" else blurb["speaker"] + ": " + blurb["message"]
+    print(message)
     if wait:
-        input("")
+        input(" ~ ")
 
 
-def ask_question(question, options):
+def ask_question(blurb):
+    question = blurb["message"]
+    options = blurb["options"]
     global incorrect_dialogue
     print(question)
     if options != "N/A":
@@ -63,20 +69,26 @@ def ask_question(question, options):
     invalid = True
     while invalid:
         response = input("> ")
-        response = response.lower()
-        if options == "N/A" and response != "":
-            invalid = False
-        elif response in options:
+        if options == "N/A" and response != "":  # name question, no lowercase
             invalid = False
         else:
-            print(random.choice(incorrect_dialogue))
+            response = response.lower()
+            if response in options:
+                invalid = False
+            else:
+                print(random.choice(incorrect_dialogue))
     return response
 
 
 def tutorial():
-    print_text("Press enter to advance in the story, let try it now...")
-    ask_question("A '> ' tells you have you need to respond to a question to continue, let's practice it too...",
-          ["yes", "no", "maybe"])
-    print("Good job, I think you're ready.")
+    data = get_dialogue_json("../dialogue/tutorial_d.json")
+    blurbs = data["text"]
+    for blurb in blurbs:
+        if blurb["type"] == "dialogue":
+            print_text(blurb)
+        elif blurb["type"] == "question":
+            ask_question(blurb)
+        elif blurb["type"] == "puzzle":
+            answer_puzzle(blurb)
     return
 

@@ -13,8 +13,11 @@
     },
     {
       "type": "puzzle",
-      "speaker": "Alice",
-      "message": "I'm doing well, thanks for asking."
+      "message": "I'm doing well, thanks for asking.",
+      "partials": {
+        "e91c254ad58860a02c788dfb5c1a65d6a8846ab1dc649631c7db16fef4af2dec": ""
+      },
+      "answer": "3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b"
     }
   ]
 }

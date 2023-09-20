@@ -1,0 +1,23 @@
+{
+  "text": [
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Press enter to advance in the story, let try it now..."
+    },
+    {
+      "type": "question",
+      "speaker": "narrator",
+      "message": "A '> ' tells you have you need to respond to a question to continue, let's practice it too...",
+      "options": ["yes", "no", "maybe"]
+    },
+    {
+      "type": "puzzle",
+      "message": "Lastly, puzzles have the symbol '>>>' (the answer to this one is pudding, see if you can guess the partial answer first!)",
+      "partials": {
+        "77af778b51abd4a3c51c5ddd97204a9c3ae614ebccb75a606c3b6865aed6744e": "Correct partial answer, wow I'm impressed."
+      },
+      "answer": "910daa97a4052206954d9a34471078f0a82539d7fe9b4724bc381f8f4ce8468f"
+    }
+  ]
+}

@@ -1,11 +1,6 @@
 {
   "text": [
     {
-      "type": "dialogue",
-      "speaker": "narrator",
-      "message": "Welcome to Dreamscape"
-    },
-    {
       "type": "question_name",
       "speaker": "narrator",
       "message": "What should we call you?",
@@ -16,6 +11,11 @@
       "speaker": "narrator",
       "message": "Would you like a quick tutorial of how things work?",
       "options": ["yes", "no"]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Good job, I think you're ready to enter now..."
     }
   ]
 }
