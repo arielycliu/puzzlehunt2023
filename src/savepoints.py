@@ -20,8 +20,9 @@ while True:
             piano(FRIENDS)
         case 3:
             k = potions(FRIENDS)
+            FRIENDS = FRIENDS.remove(k)
         case 4:
-            chess()
+            chess(FRIENDS, k)
         case 5:
             dragon()
         case 6:

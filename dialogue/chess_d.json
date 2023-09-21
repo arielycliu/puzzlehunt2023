@@ -1,0 +1,82 @@
+{
+  "text": [
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You and your two other friend, race through the forest, making it to the Fields of Valour in record time.",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Up ahead, you see and old man in a silvery cloak talking to an elegant looking lady dressed in black.\nAs you walk closer, you happen to hear some of their conversation...",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Old man",
+      "message": "Your Majesty, did you manage to solve the puzzle yet?",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Lady in black",
+      "message": "Oh no, it's black to move. I do believe I should get going...",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "The old man shuffles after her, noticing his action, the lady quickly points to you."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Lady in black",
+      "message": "I'm sure you could convince this young lad to play with you in my stead. He looks like he'd love a puzzle.",
+      "wait": "True"
+    },
+    {
+      "type": "puzzle",
+      "message": "Old man: Well, young lad, what's the solution?",
+      "partials": {
+        "c0fcb20c01825c8cbe1d66b58bc7b8e2aa88e9ec2a4392d1522b38a8b354c689": "Young ones nowadays, don't wanna put in the work"
+      },
+      "answer": "31ca3db4ba5c2ec6ed4b1296532509c843e57962c3dd1355e3d1d95658c2d417",
+      "answer_response": "Oh yes, Audinos! They are my favourite pokemon, especially the babies are so adorable..."
+    },
+    {
+      "type": "question",
+      "speaker": "Old man",
+      "message": "I have about 20 more than I should, would you like one?",
+      "options": ["yeah", "nah", "any other options?"]
+    },
+    {
+      "type": "bonus_puzzle",
+      "message": "You asked for it! Don't cry if it's too hard for you.",
+      "partials": {
+        "c0fcb20c01825c8cbe1d66b58bc7b8e2aa88e9ec2a4392d1522b38a8b354c689": "Am I the one with memory loss or are you?",
+        "093a885acec038e8d0d0fc7d8c7504a02c0a65156137106282057b7232f3d4c7": "Don't be lazy, finish it!"
+      },
+      "answer": "3b363f09b8f726b3b2927c43bd27821751e7b0b2ccbdf5574a4903d0bc525e5b",
+      "answer_response": "Everyone loves pikachu huh..."
+    },
+    {
+      "type": "pokemon_question",
+      "speaker": "Old man",
+      "message": "So what species of Pokemon would you like?",
+      "options": ""
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Old man",
+      "message": "Thanks for entertaining me, by the looks of that map you're headed to the dragon's castle. Best of luck!",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Waving goodbye to the old man, you walk up the mountain-side towards the treasure.",
+      "wait": "True"
+    }
+  ]
+}
