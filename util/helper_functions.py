@@ -48,7 +48,10 @@ def answer_puzzle(blurb):
         response = input(">>> ")
         response = hash_text(response)
         if response == answer:
-            print("Correct!")
+            if "answer_response" in blurb.keys():
+                print(blurb["answer_response"])
+            else:
+                print("Correct!")
             solved = True
         elif response in partials.keys():
             if partials[response]:

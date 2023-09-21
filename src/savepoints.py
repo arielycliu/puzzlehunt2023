@@ -1,8 +1,8 @@
 from src.intro import intro
 from src.graveyard import graveyard
 from piano import piano
-# from potions import potions
-# from chess import chess
+from potions import potions
+from chess import chess
 # from dragon import dragon
 from bossfight import bossfight
 import random
@@ -16,11 +16,10 @@ while True:
             PLAYER_NAME = intro()
         case 1:
             FRIENDS = graveyard()
-            k = random.choice(FRIENDS)
         case 2:
             piano(FRIENDS)
         case 3:
-            potions()
+            k = potions(FRIENDS)
         case 4:
             chess()
         case 5:

@@ -25,4 +25,7 @@ def intro():
     art.tprint("Dreamscape", "colossal")
     print("")
     return player_name
-intro()
+
+
+if __name__ == '__main__':
+    intro()

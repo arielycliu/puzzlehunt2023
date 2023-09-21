@@ -1,0 +1,62 @@
+{
+  "text": [
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "The road seems more frequented here. The dirt path opens up to a rickety old building.",
+      "wait": "False"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "The words 'The Last Drop' hangs on by a single nail, threatening to fall at any time.",
+      "wait": "True"
+    },
+    {
+      "type": "friend_dialogue",
+      "speaker": "friend",
+      "message": "I'm dying for a drink, come'on let's go."
+    },
+    {
+      "type": "friend_dialogue",
+      "speaker": "friend",
+      "message": "Can anyone cover me? I'd really love a drink."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Your friends quickly rush you into the bar, you grab a seat while they head out in search of drinks."
+    },
+    {
+      "type": "plotpoint"
+    },
+    {
+      "type": "puzzle",
+      "message": "Which potion should you drink?\n > Potion 1\n > Potion 2\n > Potion 3",
+      "partials": {
+        "72eec2a9a1bd0f70658f693a91ae533fa8991315914ed2adf04865e30d00265d": "I'm really not craving oreos right now...",
+        "2d9a0c4a041ba8dd5b4089e58d8696fa3b480c20968cb70584d0fde666fc1c7e": "Do I look like I want a pocky??",
+        "a7e4962f7840041e875590a60ca84b4a72add0afb479f142cf7c2796a2163757": "I don't like peanut butter flavoured things."
+      },
+      "answer": "653437f822b6017acafa84caba4eb35cbdc398c61b5bbd55a52deadcf80fffb2",
+      "answer_response": "Congrats, you get to live another day."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You find your remaining two friends trapped in a ghost sphere in the back."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You decide to set out for the Fields of Valour immediately to beat your traitor to the treasure."
+    },
+    {
+      "type": "puzzle",
+      "message": "Field of Valour location key:",
+      "partials": {},
+      "answer": "f8a7d2c642b54591c56a9603db80269656fbaedc40b62457162b896161f62e2a",
+      "text_answer": "105 110 107 105 110 103 45 119 97 116 101 114"
+    }
+  ]
+}

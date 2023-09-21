@@ -14,14 +14,13 @@ def piano(friendnames):
             hp.print_text(blurb)
         elif blurb["type"] == "friend_dialogue":
             hp.friend_print_text(blurb, random.choice(friendnames))
-        elif blurb["type"] == "question":
-            hp.ask_question(blurb)
         elif blurb["type"] == "puzzle":
             hp.answer_puzzle(blurb)
     return
 
-friendnames = ["Richard", "Alex", "Sam"]
 
-piano(friendnames)
+if __name__ == '__main__':
+    friendnames = ["Richard", "Alex", "Sam"]
+    piano(friendnames)
 
 

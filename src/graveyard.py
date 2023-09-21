@@ -3,9 +3,9 @@ import art
 
 
 def graveyard():
-    print("")
-    art.tprint("Friendly Graveyard", "small")
-    print("")
+    # print("")
+    # art.tprint("Friendly Graveyard", "small")
+    # print("")
     friend_names = []
     data = hp.get_dialogue_json("../dialogue/grave_d.json")
     blurbs = data["text"]
@@ -20,6 +20,8 @@ def graveyard():
             hp.answer_puzzle(blurb)
     return friend_names
 
-graveyard()
+
+if __name__ == '__main__':
+    graveyard()
 
 
