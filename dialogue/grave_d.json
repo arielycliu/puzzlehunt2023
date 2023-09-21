@@ -49,9 +49,10 @@
     },
     {
       "type": "puzzle",
-      "message": "When you arrive at your location, input the location key code so that I can be calibrated to that location.",
+      "message": "When you arrive at the valley, input the location key code so that I can be calibrated to that location.",
       "partials": {},
-      "answer": "1d78e018e405ef26b7f7581336a2a4c556c3783eaa763978cbd7d2ddd0adb3ad"
+      "answer": "c393983834e33d34a94eca75587bcaaee8111028e1b84f5aa710bb106a1e1b75",
+      "text_answer": "104 116 116 112 58 47 47 98 105 116 46 108"
     }
   ]
 }

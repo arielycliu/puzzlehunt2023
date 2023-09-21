@@ -1,0 +1,49 @@
+{
+  "text": [
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "After half an hour of walking, you can finally see the forest start to clear.\nSitting in the valley is a grand piano.",
+      "wait": "True"
+    },
+    {
+      "type": "friend_dialogue",
+      "speaker": "friend",
+      "message": "Why would anyone leave a perfectly good piano here?",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You shrug, walking up closer to examine the piano."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Gilbert",
+      "message": "My name's Gilbert, it's been ages since I was played.",
+      "wait": "False"
+    },
+    {
+      "type": "puzzle",
+      "message": "Gilbert: Could you tickle my keys?",
+      "partials": {
+        "46dbf03d5f80db1aced1c82f0db3d2a2db25c02fef82e4f4610cc27e1d1b0370": "That's nice I guess...it doesn't quite scratch the itch thou",
+        "02f0caa777bd9b5510b39b048a3889c41352af7b5b86060818f01246a9ffe47e": "You're almost there!"
+      },
+      "answer": "5f9c4ab08cac7457e9111a30e4664920607ea2c115a1433d7be98e97e64244ca"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "I think we're all done here, let’s set off our next location: The Last Drop\nI've heard they got good beer",
+      "wait": "False"
+    },
+    {
+      "type": "puzzle",
+      "message": "The Last Drop location key:",
+      "partials": {},
+      "answer": "a5ab7d9ae9464df75901596e5c2fc7e6d5aa06a88f86e75dd7f62ef7c32712e1",
+      "text_answer": "121 47 99 97 109 101 108 115 45 100 114"
+    }
+  ]
+}

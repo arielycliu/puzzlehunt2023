@@ -18,7 +18,7 @@ while True:
             FRIENDS = graveyard()
             k = random.choice(FRIENDS)
         case 2:
-            piano()
+            piano(FRIENDS)
         case 3:
             potions()
         case 4:

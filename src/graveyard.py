@@ -1,8 +1,11 @@
 from util import helper_functions as hp
-import random
+import art
 
 
 def graveyard():
+    print("")
+    art.tprint("Friendly Graveyard", "small")
+    print("")
     friend_names = []
     data = hp.get_dialogue_json("../dialogue/grave_d.json")
     blurbs = data["text"]

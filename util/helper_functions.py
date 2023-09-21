@@ -14,6 +14,13 @@ incorrect_dialogue = [
 
 def hash_text(text_to_hash):
     text_to_hash = text_to_hash.lower()
+    try:
+        text_to_hash = float(text_to_hash)
+        text_to_hash = int(text_to_hash)
+        text_to_hash = str(text_to_hash)
+    except:
+        text_to_hash = text_to_hash.replace(" ", "")
+
     # Create SHA-256 hash object
     sha256 = hashlib.sha256()
     # Update the hash object with the bytes of the input text
@@ -30,6 +37,8 @@ def get_dialogue_json(path):
 
 
 def answer_puzzle(blurb):
+    print("")
+    print("=" * 170)
     question = blurb["message"]
     partials = blurb["partials"]
     answer = blurb["answer"]
@@ -39,7 +48,7 @@ def answer_puzzle(blurb):
         response = input(">>> ")
         response = hash_text(response)
         if response == answer:
-            print("Correct, you got the final answer!")
+            print("Correct!")
             solved = True
         elif response in partials.keys():
             if partials[response]:
@@ -56,6 +65,12 @@ def print_text(blurb):
     print(message)
     if "wait" not in blurb.keys() or blurb["wait"] != "False":
         input(" ~ ")
+
+
+def friend_print_text(blurb, friend_name):
+    message = friend_name + ": " + blurb["message"]
+    print(message)
+    print("")
 
 
 def ask_question(blurb):
