@@ -1,7 +1,6 @@
 from util import helper_functions as hp
 import art
 import random
-from util.poke import poke_display as ph
 from util.poke.pokebattle import battle as b
 import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
@@ -46,8 +45,12 @@ def potions(friendnames, player):
             direct_dialogue("In the graveyard.")
         elif blurb["type"] == "pokemon":
             # ph.display("volcarona")
-            player = b.add_pokemon("volcarona", player)
+            b.add_pokemon("volcarona", player)
+            print("-"*100)
             print("Volcarona acquired!")
+            print("-" * 100)
+            b.printpokemon(player)
+            print("-" * 100)
     return k, player
 
 

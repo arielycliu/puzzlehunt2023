@@ -93,7 +93,8 @@ def ask_question(blurb):
             print("Blank answers are not allowed here!")
         else:
             try:
-                i = int(response)
+                i = float(response)
+                i = int(i)
                 if i <= len(options):
                     response = options[i - 1]
                     # print(f"Selected option: {response}")

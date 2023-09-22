@@ -52,7 +52,8 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "You decide to set out for the Fields of Valour immediately to beat your traitor to the treasure."
+      "message": "You decide to set out for the Fields of Valour immediately to beat your traitor to the treasure.",
+      "wait": "False"
     },
     {
       "type": "puzzle",

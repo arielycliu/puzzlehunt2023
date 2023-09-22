@@ -1,4 +1,7 @@
 from random import randint
+import os
+os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
+
 
 def direct_ask_question(question, options):
     print(question)
@@ -24,6 +27,7 @@ def direct_ask_question(question, options):
             else:
                 print("Not an option here")
     return response
+
 
 def fencing(playername, enemyname, runaway_count=0):
     if runaway_count >= 5:

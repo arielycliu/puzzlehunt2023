@@ -9,7 +9,7 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "Up ahead, you see and old man in a silver cloak talking to an elegant looking lady dressed in black.\nAs you walk closer, you happen to hear some of their conversation...",
+      "message": "Up ahead, you see an old man in a silver cloak talking to an elegant looking lady dressed in black.\nAs you walk closer, you happen to hear some of their conversation...",
       "wait": "True"
     },
     {
@@ -60,7 +60,7 @@
       "type": "dialogue",
       "speaker": "Old man",
       "message": "Thanks for entertaining me, by the looks of that map you're headed to the dragon's castle. Best of luck!",
-      "wait": "True"
+      "wait": "False"
     },
     {
       "type": "dialogue",

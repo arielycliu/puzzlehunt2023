@@ -106,7 +106,7 @@ class Pokemon(object):
 		self.attacks[attackUsedInd].count -= 1
 
 	def printPokemon(self):
-		pprint(f"Name: {self.name}\tLevel: {self.level}\tHP: {self.health}/{self.maxHealth}"); sleep(0.1)
+		pprint(f"Name: {self.name}\tLevel: {self.level}\tHP: {self.health}/{self.maxHealth}");
 	
 	
 	def displayStats(self, trainer="player's", detailed=False):

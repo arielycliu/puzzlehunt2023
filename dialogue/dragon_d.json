@@ -39,7 +39,7 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "The dragon bursts into tears, looking like he's had the shittest day of his life",
+      "message": "The dragon bursts into tears, looking like she's had the shittest day of her life",
       "wait": "True"
     },
     {
@@ -57,13 +57,13 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "The dragon bursts into tears again, and your two friends comfort him. You grab a rusty sword and chase after the traitor.",
+      "message": "The dragon bursts into tears again, and your two friends comfort her. You grab a rusty sword and chase after the traitor.",
       "wait": "True"
     },
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "You catch up to them pretty fast, and chuck a pokeball at their head",
+      "message": "You catch up to them pretty fast, and chuck a pokeball at their head...",
       "wait": "True"
     }
   ]

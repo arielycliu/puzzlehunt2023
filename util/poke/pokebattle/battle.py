@@ -5,16 +5,25 @@ from util.poke.pokebattle.citys_and_game import pokemon_duel
 from copy import deepcopy
 
 
+def printpokemon(player):
+    for pokemon in player.pokemonInHand:
+        pokemon.printPokemon()
+    print("Current pokemon: ", end="")
+    player.currentPokemon.printPokemon()
+
+
 def print_options():
     for pokemon in pokemonWorld:
         print(pokemon, end=", ")
     print("that's all I have!")
+
 
 def check_pokemon(pokemon):
     if pokemon in pokemonWorld:
         return True
     else:
         return False
+
 
 def createtrainer(name):
     player = PokemonTrainer(name)
@@ -23,7 +32,7 @@ def createtrainer(name):
 
 def add_pokemon(pokemon_name, player, switchcur=False):
     pokedata = deepcopy(pokemonWorld[pokemon_name])
-    playerPokemon = Pokemon(pokemon_name, pokedata, 1) # 15
+    playerPokemon = Pokemon(pokemon_name, pokedata, 12)
     player.pokemonInHand.append(playerPokemon)
     if switchcur:
         player.currentPokemon = playerPokemon
@@ -33,14 +42,14 @@ def add_pokemon(pokemon_name, player, switchcur=False):
 def create_enemy(enemyname):
     raichu = deepcopy(pokemonWorld['raichu-alola'])
     raichu = Pokemon('raichu-alola', raichu, level=0)
-    raichu.npcPokemonReady(maxlevel=14)
+    raichu.npcPokemonReady(maxlevel=15)
 
     umbreon = deepcopy(pokemonWorld['umbreon'])
     umbreon = Pokemon('umbreon', umbreon, level=0)
-    umbreon.npcPokemonReady(maxlevel=13)
+    umbreon.npcPokemonReady(maxlevel=7)
 
-    Enemy = PokemonTrainer(enemyname, kind='npc', money=1000, startingPokemons=[umbreon])
-    Enemy.currentPokemon = Enemy.pokemonInHand[0]
+    Enemy = PokemonTrainer(enemyname, kind='npc', money=1000, startingPokemons=[raichu, umbreon])
+    Enemy.currentPokemon = raichu
     return Enemy
 
 

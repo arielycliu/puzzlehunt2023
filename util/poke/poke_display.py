@@ -4,6 +4,8 @@ import requests
 import urllib.request
 import os
 from util.poke.pokebattle.battle import check_pokemon
+FPS = pygame.time.Clock()
+time = 0
 
 def get_name():
     valid_input = False
@@ -56,16 +58,16 @@ def display(pokemon_name=None):
     button_rect = button_text.get_rect(center=(screen_width // 2, screen_height - 50))
 
     # Main game loop
+    frames = 0
     running = True
     while running:
+        frames += 1
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            elif event.type == pygame.MOUSEBUTTONDOWN:
-                # Check if the mouse click is within the button area
-                if button_rect.collidepoint(event.pos):
-                    print(f"{pokemon_name} is now in your inventory")
-                    running = False
+
+        if frames == 60:
+            running = False
 
         # Clear the screen
         screen.fill((255, 255, 255))  # Fill with white color
@@ -80,6 +82,9 @@ def display(pokemon_name=None):
         # Update the display
         pygame.display.flip()
 
+        FPS.tick(30)
+
     # Quit Pygame
     pygame.quit()
     return pokemon_name
+

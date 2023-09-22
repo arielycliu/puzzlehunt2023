@@ -16,9 +16,14 @@ def bonus_puzzle(player):
     print("Here's what I have: ")
     b.print_options()
     pokemon_name = ph.get_name()
-    player = b.add_pokemon(pokemon_name, player)
-    print(f"{pokemon_name} Acquired!")
+    b.add_pokemon(pokemon_name, player, False)
+    print("-" * 100)
+    print(f"{pokemon_name} acquired!")
+    print("-" * 100)
+    b.printpokemon(player)
+    print("-" * 100)
     return player
+
 
 def chess(friendnames, player):
     print("")
@@ -40,7 +45,13 @@ def chess(friendnames, player):
                 print("Old man: suit yourself...youngsters nowadays sure are full of themselves huh")
             else:
                 print("Alright, I like your enthusiasm - good choice!")
-                ph.display("audino")
+                # ph.display("audino")
+                b.add_pokemon("audino", player, False)
+                print("-" * 100)
+                print(f"Audino Acquired!")
+                print("-" * 100)
+                b.printpokemon(player)
+                print("-" * 100)
         elif blurb["type"] == "puzzle":
             hp.answer_puzzle(blurb)
     return player

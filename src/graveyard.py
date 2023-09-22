@@ -1,5 +1,6 @@
 from util import helper_functions as hp
-import art
+import os
+os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 
 
 def graveyard():

@@ -7,13 +7,13 @@ import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 
 
-
 def direct_dialogue(message, friend_name=None, wait=True):
     if friend_name:
         message = friend_name + ": " + message
     print(message)
     if wait:
         input(" ~ ")
+
 
 def direct_ask_question(question, options):
     print(question)
@@ -109,6 +109,6 @@ if __name__ == '__main__':
     friendnames = ["Simon", "Vincent"]
     player = b.createtrainer("Richard")
     b.add_pokemon("garchomp", player, True)
-    # b.add_pokemon("volcarona", player, False)
+    b.add_pokemon("volcarona", player)
     k = b.create_enemy("Ryoto")
-    bossfight(friendnames, player, "Richard", k, "Ryoto", False)
+    bossfight(friendnames, player, "Richard", k, "Ryoto", True)

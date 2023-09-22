@@ -1,6 +1,7 @@
 from util import helper_functions as hp
 import art
-
+import os
+os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 
 def intro():
     data = hp.get_dialogue_json("../dialogue/intro_d.json")

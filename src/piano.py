@@ -1,7 +1,6 @@
 from util import helper_functions as hp
 import art
 import random
-from util.poke import poke_display as ph
 from util.poke.pokebattle import battle as b
 import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
@@ -22,8 +21,12 @@ def piano(friendnames, player):
         elif blurb["type"] == "pokemon":
             hp.print_text(blurb)
             # ph.display("garchomp")
-            player = b.add_pokemon("garchomp", player, True)
+            b.add_pokemon("garchomp", player, True)
+            print("-"*100)
             print("Garchomp acquired!")
+            print("-" * 100)
+            b.printpokemon(player)
+            print("-" * 100)
     return player
 
 

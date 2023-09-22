@@ -1,8 +1,6 @@
 from util import helper_functions as hp
 import art
 import random
-from util.poke import poke_display as ph
-from util.poke.pokebattle import battle as b
 import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 
