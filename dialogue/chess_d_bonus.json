@@ -1,0 +1,24 @@
+{
+  "bonus_puzzle": {
+      "message": "Old man: You asked for it! Don't cry if it's too hard for you.\nLook carefully at the board, revisit your partial answers",
+      "partials": {
+        "c0fcb20c01825c8cbe1d66b58bc7b8e2aa88e9ec2a4392d1522b38a8b354c689": "Am I the one with memory loss or are you?",
+        "093a885acec038e8d0d0fc7d8c7504a02c0a65156137106282057b7232f3d4c7": "Don't be lazy, finish it!"
+      },
+      "answer": "3b363f09b8f726b3b2927c43bd27821751e7b0b2ccbdf5574a4903d0bc525e5b",
+      "answer_response": "Everyone loves pikachu huh, well good job! I suprised you actually got it..."
+    },
+  "pokemon_question": {
+      "type": "pokemon_question",
+      "speaker": "Old man",
+      "message": "So what species of Pokemon would you like?",
+      "options": "",
+      "wait": "False"
+  },
+  "pokemon_response": {
+      "type": "pokemon_question",
+      "speaker": "Old man",
+      "message": "Alright, you got it.",
+      "options": ""
+  }
+}

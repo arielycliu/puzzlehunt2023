@@ -9,13 +9,13 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "To the right you can see some of your fencing friends gathered in a group. You walk up closer to find that everyone is translucent.",
+      "message": "To the right you can see your fencing friends gathered in a group. You walk up closer to find that everyone is translucent.",
       "wait": "True"
     },
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "Your friends are gathered about a map, chatting about some treasure guarded by a fire-breathing dragon."
+      "message": "Your friends are gathered around a map, chatting about some treasure guarded by a fire-breathing dragon."
     },
     {
       "type": "dialogue",

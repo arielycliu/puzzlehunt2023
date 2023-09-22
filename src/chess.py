@@ -1,10 +1,26 @@
 from util import helper_functions as hp
 import art
 import random
+from util.poke import poke_display as ph
+from util.poke.pokebattle import battle as b
+import os
+os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 
 
-def chess(friendnames, k):
-    bonus = False
+def bonus_puzzle(player):
+    bonus_data = hp.get_dialogue_json("../dialogue/chess_d_bonus.json")
+    puzzle = bonus_data["bonus_puzzle"]
+    hp.answer_puzzle(puzzle)
+    pokemon_question = bonus_data["pokemon_question"]
+    hp.print_text(pokemon_question)
+    print("Here's what I have: ")
+    b.print_options()
+    pokemon_name = ph.get_name()
+    player = b.add_pokemon(pokemon_name, player)
+    print(f"{pokemon_name} Acquired!")
+    return player
+
+def chess(friendnames, player):
     print("")
     art.tprint("Fields of Valour", "small")
     print("")
@@ -17,20 +33,22 @@ def chess(friendnames, k):
             hp.friend_print_text(blurb, random.choice(friendnames))
         elif blurb["type"] == "question":
             response = hp.ask_question(blurb)
-            if response == "Got any other Pokemon options?":
-                bonus = True
+            if response == "any other options?":
+                print("Old man: Yes but you have to earn it. Solve the bonus puzzle and I’ll give you one. ")
+                player = bonus_puzzle(player)
+            elif response == "no":
+                print("Old man: suit yourself...youngsters nowadays sure are full of themselves huh")
+            else:
+                print("Alright, I like your enthusiasm - good choice!")
+                ph.display("audino")
         elif blurb["type"] == "puzzle":
             hp.answer_puzzle(blurb)
-        elif blurb["type"] == "bonus_puzzle" and bonus == True:
-            hp.answer_puzzle(blurb)
-        elif blurb["type"] == "pokemon_question" and bonus == True:
-            response = hp.ask_question(blurb)
-    return
+    return player
 
 
 if __name__ == '__main__':
-    friendnames = ["Richard", "Alex"]
-    k = "Jackie"
-    chess(friendnames, k)
+    player = b.createtrainer("Richard")
+    friendnames = ["Vincent", "Simon"]
+    chess(friendnames, player)
 
 

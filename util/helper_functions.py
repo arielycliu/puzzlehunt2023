@@ -92,7 +92,13 @@ def ask_question(blurb):
         elif options == "" and response == "":
             print("Blank answers are not allowed here!")
         else:
-            response = response.lower()
+            try:
+                i = int(response)
+                if i <= len(options):
+                    response = options[i - 1]
+                    # print(f"Selected option: {response}")
+            except:
+                response = response.lower()
             if response in options:
                 invalid = False
             else:

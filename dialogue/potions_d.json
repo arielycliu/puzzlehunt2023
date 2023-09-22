@@ -18,11 +18,6 @@
       "message": "I'm dying for a drink, come'on let's go."
     },
     {
-      "type": "friend_dialogue",
-      "speaker": "friend",
-      "message": "Can anyone cover me? I'd really love a drink."
-    },
-    {
       "type": "dialogue",
       "speaker": "narrator",
       "message": "Your friends quickly rush you into the bar, you grab a seat while they head out in search of drinks."
@@ -45,6 +40,14 @@
       "type": "dialogue",
       "speaker": "narrator",
       "message": "You find your remaining two friends trapped in a ghost sphere in the back."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "In addition, you also find a random volcarona trapped in with your friends..."
+    },
+    {
+      "type": "pokemon"
     },
     {
       "type": "dialogue",

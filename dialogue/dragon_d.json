@@ -1,0 +1,70 @@
+{
+  "text": [
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "Following the path up to the mountain summit, you arrive at the dragon's den.",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You push open the grand doors to the treasure room only to find...",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "The room was empty save for an injured red dragon and a couple of rusty swords and armour.",
+      "wait": "True"
+    },
+    {
+      "type": "friend_dialogue",
+      "speaker": "Friend",
+      "message": "What in the world happened here?",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Dragon",
+      "message": "Somebody snuck in and stabbed me with a poisoned dagger while I was sleeping!!",
+      "wait": "False"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Dragon",
+      "message": "They even took all my gold and my life's greatest treasure!",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "The dragon bursts into tears, looking like he's had the shittest day of his life",
+      "wait": "True"
+    },
+    {
+      "type": "friend_dialogue",
+      "speaker": "Friend",
+      "message": "Do you know which way that person left?",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "Dragon",
+      "message": "Out that oak door, and on the left. They haven't left for long.",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "The dragon bursts into tears again, and your two friends comfort him. You grab a rusty sword and chase after the traitor.",
+      "wait": "True"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "narrator",
+      "message": "You catch up to them pretty fast, and chuck a pokeball at their head",
+      "wait": "True"
+    }
+  ]
+}
