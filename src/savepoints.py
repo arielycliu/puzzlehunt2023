@@ -17,19 +17,19 @@ while True:
     match SAVEPOINT:
         case 0:
             PLAYER_NAME = intro()
-            player = b.createtrainer(PLAYER_NAME)
+            PLAYER = b.createtrainer(PLAYER_NAME)
         case 1:
             FRIENDS = graveyard()
         case 2:
-            player = piano(FRIENDS, player)  # pokemon 1: garchomp
+            PLAYER = piano(FRIENDS, PLAYER)  # pokemon 1: garchomp
         case 3:
-            k, player = potions(FRIENDS, player)  # pokemon 2: volcarona
-            FRIENDS = FRIENDS.remove(k)
-            enemy = b.create_enemy(k)
+            ENEMYNAME, PLAYER = potions(FRIENDS, PLAYER)  # pokemon 2: volcarona
+            FRIENDS = FRIENDS.remove(ENEMYNAME)
+            ENEMY = b.create_enemy(ENEMYNAME)
         case 4:
-            player = chess(FRIENDS, k)  # pokemon 3: your choice
+            PLAYER = chess(FRIENDS, PLAYER_NAME)  # pokemon 3: your choice
         case 5:
             dragon(FRIENDS)
         case 6:
-            bossfight(player, k)
+            bossfight(FRIENDS, PLAYER, PLAYER_NAME, ENEMY, ENEMYNAME, pokemonfight=True)
     SAVEPOINT += 1

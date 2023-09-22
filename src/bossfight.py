@@ -1,11 +1,11 @@
-from util import helper_functions as hp
-import art
 import random
-from util.poke import poke_display as ph
+import art
+from util import helper_functions as hp
 from util.poke.pokebattle import battle as b
-from util.poke.pokebattle.player import PokemonTrainer
+from fencing import fencing
 import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
+
 
 
 def direct_dialogue(message, friend_name=None, wait=True):
@@ -65,8 +65,8 @@ def bossfight(friendnames, player, playername, enemy, enemyname, pokemonfight=Tr
             restart(friendnames, player, playername, enemy, enemyname, pokemonfight)
 
     pokemonfight = False
-    direct_dialogue("You may have won against my pokemon...")
-    direct_dialogue("But you will not win against me!")
+    direct_dialogue("You may have won against my pokemon...", enemyname)
+    direct_dialogue("But you will not win against me!", enemyname)
     print(f"{enemyname} pulls out a sabre stained with purple poison, and starts to run at you!")
 
     options = ["run away", "stab them"]
@@ -76,10 +76,33 @@ def bossfight(friendnames, player, playername, enemy, enemyname, pokemonfight=Tr
         print(f"{enemyname} has priority, your attack has no effect")
         print("Your friends rush to your side as you bleed out")
         restart(friendnames, player, playername, enemy, enemyname, pokemonfight)
+    else:
+        won = fencing(playername, enemyname)
+        if not won:
+            restart(friendnames, player, playername, enemy, enemyname, pokemonfight)
+        else:
+            direct_dialogue("You won!")
 
+            direct_dialogue("You need me alive...", enemyname)
+            direct_dialogue("The treasure...", enemyname)
+            direct_dialogue("You can't open it without me...", enemyname, wait=True)
+            direct_dialogue(f"You hesitate, wondering if you should let {enemyname} live after all", wait=True)
 
+            x = random.choice(friendnames)
+            print(f"{x} stabs {enemyname} through the chest with a rusty sword")
+            direct_dialogue(f"That's for stabbing my new girlfriend, dick", x)
 
+            direct_dialogue("How am I supposed to open the treasure now!", playername)
+            direct_dialogue("Do you really need him? Just solve the puzzle like you always do!", x)
 
+            data = hp.get_dialogue_json("../dialogue/bossfight_d.json")
+            hp.answer_puzzle(data)
+            direct_dialogue("I love you too!")
+            direct_dialogue("Happy Birthday Richard!!")
+
+            print("")
+            art.tprint("The End!", "colossal")
+            print("")
 
 
 if __name__ == '__main__':
