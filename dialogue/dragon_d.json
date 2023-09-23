@@ -15,7 +15,7 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "The room was empty save for an injured red dragon and a couple of rusty swords and armour.",
+      "message": "The room is empty save for an injured red dragon and a couple of rusty swords and armour.",
       "wait": "True"
     },
     {
@@ -51,13 +51,13 @@
     {
       "type": "dialogue",
       "speaker": "Dragon",
-      "message": "Out that oak door, and on the left. They haven't left for long.",
+      "message": "Out the oak door, to the left. They JUST stabbed me.",
       "wait": "True"
     },
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "The dragon bursts into tears again, and your two friends comfort her. You grab a rusty sword and chase after the traitor.",
+      "message": "The dragon bursts into tears again, and your two friends comfort her. You grab a rusty sword and chase after the foe.",
       "wait": "True"
     },
     {

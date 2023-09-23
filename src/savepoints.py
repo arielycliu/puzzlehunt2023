@@ -12,6 +12,12 @@ PLAYER_NAME = "Richard"
 FRIENDS = ["Simon", "Vincent"]
 ENEMYNAME = "Ryoto"
 
+"""
+104 116 116 112 58 47 47 98 105 116 46 108
+121 47 99 97 109 101 108 115 45 100 114
+105 110 107 105 110 103 45 119 97 116 101 114
+"""
+
 while True:
     match SAVEPOINT:
         case 0:

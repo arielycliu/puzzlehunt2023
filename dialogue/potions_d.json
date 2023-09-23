@@ -20,7 +20,7 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "Your friends quickly rush you into the bar, you grab a seat while they head out in search of drinks."
+      "message": "Your friends quickly rush you into the bar, and you grab a seat while they head out in search of drinks."
     },
     {
       "type": "plotpoint"

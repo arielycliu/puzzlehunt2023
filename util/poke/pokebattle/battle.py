@@ -13,9 +13,14 @@ def printpokemon(player):
 
 
 def print_options():
+    count = 0
     for pokemon in pokemonWorld:
-        print(pokemon, end=", ")
-    print("that's all I have!")
+        if count >= 9:
+            print(pokemon, end=", \n")
+            count = 0
+        else:
+            print(pokemon, end=", ")
+            count += 1
 
 
 def check_pokemon(pokemon):
@@ -57,3 +62,6 @@ def duel(player, enemy):
     winner, player = pokemon_duel(player, enemy, battle='duel')
     print(f"{winner} wins!")
     return winner
+
+
+

@@ -93,7 +93,7 @@ def bossfight(friendnames, player, playername, enemy, enemyname, pokemonfight=Tr
             direct_dialogue(f"That's for stabbing my new girlfriend, dick", x)
 
             direct_dialogue("How am I supposed to open the treasure now!", playername)
-            direct_dialogue("Do you really need him? Just solve the puzzle like you always do!", x)
+            direct_dialogue(f"Do you really need {enemyname}? Just solve the puzzle like you always do!", x)
 
             data = hp.get_dialogue_json("../dialogue/bossfight_d.json")
             hp.answer_puzzle(data)
@@ -111,4 +111,4 @@ if __name__ == '__main__':
     b.add_pokemon("garchomp", player, True)
     b.add_pokemon("volcarona", player)
     k = b.create_enemy("Ryoto")
-    bossfight(friendnames, player, "Richard", k, "Ryoto", True)
+    bossfight(friendnames, player, "Richard", k, "Ryoto", False)

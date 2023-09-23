@@ -40,6 +40,7 @@ def chess(friendnames, player):
             response = hp.ask_question(blurb)
             if response == "any other options?":
                 print("Old man: Yes but you have to earn it. Solve the bonus puzzle and I’ll give you one. ")
+                input(" ~ ")
                 player = bonus_puzzle(player)
             elif response == "no":
                 print("Old man: suit yourself...youngsters nowadays sure are full of themselves huh")
@@ -59,7 +60,11 @@ def chess(friendnames, player):
 
 if __name__ == '__main__':
     player = b.createtrainer("Richard")
-    friendnames = ["Vincent", "Simon"]
+    bonus_puzzle(player)
+    b.add_pokemon("garchomp", player, True)
+    b.add_pokemon("volcarona", player, False)
+    friendnames = ["Janice", "Samuel"]
     chess(friendnames, player)
+
 
 

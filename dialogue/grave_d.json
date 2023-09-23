@@ -3,13 +3,13 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "You wake up in the middle of a cemetery. The last thing you can remember is… well actually you can’t remember anything. ",
+      "message": "You wake up in the middle of a cemetery. The last thing you can remember is... well actually you can’t remember anything. ",
       "wait": "True"
     },
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "To the right you can see your fencing friends gathered in a group. You walk up closer to find that everyone is translucent.",
+      "message": "To the right you can see your fencing friends gathered in a group. You walk up closer...",
       "wait": "True"
     },
     {
@@ -20,7 +20,7 @@
     {
       "type": "dialogue",
       "speaker": "narrator",
-      "message": "You remember that you can’t afford rent this month and the decision is just about made. \nOne last thing, which three friends would you like to have join you on this adventure? (must be a fencer)",
+      "message": "You remember that you can’t afford rent this month and the decision is just about made. \n \nOne last thing, which three friends would you like to have join you on this adventure? (must be a fencer)",
       "wait": "False"
     },
     {
